@@ -3,19 +3,17 @@ import { Link } from "react-router-dom";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
+  
 
   useEffect(() => {
-    const opt={
-        method: "GET"
-    };
     const getData =async () => {
-        const products =await fetch("   https://fakestoreapi.com/products", opt);
+        const products =await fetch("https://fakestoreapi.com/products");
         const data =await products.json();
         setProducts(data)
     }
     getData();
   
-  }, []);
+  },[]);
 
   return (
     <div>
