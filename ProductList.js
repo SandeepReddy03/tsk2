@@ -17,7 +17,7 @@ function ProductList() {
 
   return (
     <div>
-      <h1>Products</h1>
+      <h1>Products Display</h1>
       <ul>
         {products.map((product) => (
           <li key={product.id}>

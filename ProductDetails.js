@@ -19,7 +19,7 @@ function ProductDetails() {
    
   }, [id]);
 
-  if (!product) return <div class="product">Loading...</div>;
+  if (!product) return <div class="product">Loading Please wait...</div>;
 
   return (
     <div class="product">
